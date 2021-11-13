@@ -12,8 +12,9 @@ $color:#d1a954;
 }
 
 body{
-    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Open Sans Condensed';
     font-weight: bold;
+    background:#333333;
 }
 .wrapper{
     min-height: 100%;
@@ -52,6 +53,20 @@ body{
     &:hover{
         background:transparent;
         color: $color;
+    }
+}
+.section__logo{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    &::first-letter{
+        color:$color;
     }
 }
 .header{
@@ -299,6 +314,57 @@ body{
     }
     
 }
+.about{
+    padding: 150px 0;
+    &__body{
+        &-content{
+            display: flex;
+            margin-top: 100px;
+            .about__item{
+                h3{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 21px;
+                    line-height: 29px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    margin-bottom: 40px;
+                }
+            }
+            .about__item:first-child{
+                width: 445px;
+                p{
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+                }
+            }
+            .about__item:nth-child(2){
+                width: 255px;
+                margin: 0 77px 0 30px;
+                svg{
+                    width: 70px;
+                    height: 70px;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.05em;
+                    color: #FFFFFF;
+                    margin: 15px 0 25px;
+                    &::first-word{
+                        color:$color;
+                    }
+                }
+            }
+        }
+    }
+}
 @media (max-width:1450px) {
     .header{
         .header__body{
@@ -329,6 +395,43 @@ body{
             }
         }
         
+    }
+    .about{
+        padding: 150px 0;
+        &__body{
+            &-content{
+                .about__item:first-child{
+                    width: 445px;
+                    p{
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 150%;
+                        color: #FFFFFF;
+                    }
+                }
+                .about__item:nth-child(2){
+                    margin-top: 50px;
+                    width: 255px;
+                    margin: 0 0 0 30px;
+                    svg{
+                        height: 70px;
+                    }
+                    p{
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 0.05em;
+                        color: #FFFFFF;
+                        margin: 15px 0 25px;
+                    }
+                }
+                .about__item:last-child{
+                    display: none;
+                }
+            }
+        }
     }
 }
 @media (max-width:940px){
@@ -375,6 +478,7 @@ body{
                 padding: 140px 39px 47px;
                 transition:.3s;
                 z-index: 2;
+                overflow: auto;
                 &.active{
                     left: 0;
                 }
@@ -472,10 +576,12 @@ body{
     .main__information{
         .main__information-body{
             margin-left: 0;
+            justify-content: start;
             .information{
                 padding-top: 250px;
                 h1{
                     font-size: 50px;
+                    line-height: 60px;
                 }
                 p{
                     font-size: 12px;
@@ -494,6 +600,7 @@ body{
             .information{
                 h1{
                     font-size: 40px;
+                    line-height: 40px;
                 }
                 p{
                     font-size: 12px;
