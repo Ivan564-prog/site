@@ -27,9 +27,9 @@
 						<nav class="menu__nav">
 							<div class="close__burger"></div>
 							<ul class="menu__list">
-								<li class="menu__item"><a href="#">Главная</a></li>
-								<li class="menu__item"><a href="#">о театре</a></li>
-								<li class="menu__item"><a href="#">Наши постановки</a></li>
+								<li class="menu__item"><a href="#main">Главная</a></li>
+								<li class="menu__item"><a href="#about">о театре</a></li>
+								<li class="menu__item"><a href="#staging">Наши постановки</a></li>
 								<li class="menu__item"><a href="#">партнеры театра</a></li>
 								<li class="menu__item"><a href="#">контакты</a></li>
 							</ul>
@@ -61,7 +61,7 @@
 				</div>
 			</header>
 			<main class="main">
-				<section class="main__information">
+				<section id="main" class="main__information">
 					<aside>
 						<span>контактная информация</span>
 						<span class="line"></span>
@@ -112,7 +112,7 @@
 						</div>
 					</div>
 				</section>
-				<section class="about">
+				<section id="about" class="about">
 					<div class="conteiner">
 						<div class="about__body">
 							<h2 class="section__logo">o театре</h2>
@@ -129,11 +129,54 @@
 									<p>1600 посадочный мест</p>
 									<svg>
 										<use xlink:href="img/sprite.svg#room"></use>
+									</svg>	
 										<p>350 лет истории</p>
 								</div>
 								<div class="about__item">
 									<img src="img/театр.jpg" alt="театр">
 								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section id="staging" class="staging">
+					<h2 class="section__logo">наши постановки</h2>
+						<div class="staging__body">
+							<a class="staging__item first" href="#">
+								<img src="img/first.jpg" alt="picture">
+								<h3>ОСКАР 2020</h3>
+								<p>сентябрь 2020</p>
+							</a>
+							<a class="staging__item second" href="#">
+								<img src="img/second.jpg" alt="picture">
+								<h3>грамофон</h3>
+								<p>июнь 2020</p>
+							</a>
+							<a class="staging__item third" href="#">
+								<img src="img/thr.jpg" alt="picture">
+								<h3>золотой грамофон</h3>
+								<p>июль 2020</p>
+							</a>
+							<a class="staging__item fourth" href="#">
+								<img src="img/four.jpg" alt="picture">
+								<h3>щелкунчик</h3>
+								<p>май 2020</p>
+							</a>
+						</div>
+				</section>
+				<section class="best">
+					<div class="conteiner">
+						<div class="best__body">
+							<div class="best__item years">
+								<p>2018</p>
+								<p>2019</p>
+								<p>2020</p>
+							</div>
+							<div class="best__item reviews">
+								<svg>
+									<use xlink:href="img/sprite.svg#stars"></use>
+								</svg>
+								<p>Лучший театр <br> по мнению театральных критиков Парижа</p>
 							</div>
 						</div>
 					</div>
